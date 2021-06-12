@@ -1,0 +1,48 @@
+<%- include('parts/header') %>
+<% var error %>
+<section class="registration vh-100 d-flex flex-column justify-content-center align-items-center">
+	<div class="container">
+      <div class="row justify-content-center">
+      	<div class="col-12 col-md-6 col-lg-4">
+      		<div class="card text-center p-4">
+      			<h1>Instagram</h1>
+      			<strong class="registration_slogan my-3">Sign up to see and videos from your friends.</strong>
+      			<% if(error){ %>
+      			<div class="errorBox  alert alert-danger d-flex align-items-center justify-content-center">
+                 <%= error%>
+      			</div>
+      			<% } %>
+      			<form class="mt-2 " method="POST">
+      			    <div class="form-floating mb-1">
+                      <input type="tel" class="form-control bg-light my-2" style="min-height: 45px;" name="phone" id="floatingInput" placeholder="Phone Number">
+                      <label for="floatingInput">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-1">
+                      <input type="text" class="form-control bg-light mb-2 " style="min-height: 45px;" id="floatingInput" name="name" placeholder="Full Name">
+                      <label for="floatingInput">Full Name</label>
+                    </div>
+      				<div class="form-floating mb-1">
+                      <input type="text" class="form-control bg-light mb-2 " style="min-height: 45px;" id="floatingInput" name="username" placeholder="Username">
+                      <label for="floatingInput">Username</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control bg-light mb-2 " style="min-height: 45px;" id="floatingPassword" name="password" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="btn btn-primary w-100 my-4">Sign Up</button>
+                    <p class="text-muted">By singing up,you agree to our <a target="_blank" href="https://help.instagram.com/581066165581870" tabindex="0">Terms</a>, <a target="_blank" href="https://help.instagram.com/519522125107875" tabindex="0">Data Policy</a> and <a target="_blank" href="/legal/cookies/" tabindex="0">Cookies Policy</a>.</p>
+      			</form>
+      		</div>
+      	</div>
+      </div>
+      <div class="row justify-content-center">
+      	<div class="col-12 col-md-6 col-lg-4">
+      	 <div class="card my-3 text-center p-4">
+      		<p class="m-0 p-0">Have an accaunt? <a href="/login">Log in</a></p>
+      	 </div>
+        </div>  
+      </div>
+	</div>
+</section>
+
+<%- include('parts/footer') %>

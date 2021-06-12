@@ -1,0 +1,94 @@
+$backgroundColor: #fafafa;
+
+
+
+   
+.indexSect{
+   background-color: $backgroundColor;
+   min-height: 100vh;
+   .profile{
+      &-label{
+         cursor: pointer;
+      }
+   }
+}
+.user{
+   &-title , &-job{
+      text-align: left
+   }
+}
+.status{
+      text-align: left
+}
+.nav-link.active{
+   border: none;
+   border-bottom: 1px solid #333 !important;
+}
+
+.bdate{
+   background-color: $backgroundColor;
+   .registration_slogan {
+   	font-size: 23px;
+   }
+   .cardBox{
+      min-width: 40%;
+   
+   .card{
+
+      padding: 20px;
+   	input {
+   		height: 55px;
+   	}
+   	h1{
+   		font-family: 'Yesteryear' , 'Mustard';
+   	}
+   	label {
+   		color: #888;
+   		}
+   	strong {
+        color: #999;
+   	}
+   	.errorBox{
+   		height: 47px;
+   	}
+   }
+}
+    &-img{
+            height: 70px;
+            object-fit: contain;
+      }
+}
+
+.positionImg{
+   position: absolute;
+   top: 100px;
+   left: 150px;
+   @media only   screen and (min-width: 1200px){
+      left: 194px;
+   @media only   screen and (min-width: 1400px){
+   left: 201px;
+      }
+} 
+}
+
+
+@-webkit-keyframes zoom {
+from {
+-webkit-transform: scale(1, 1);
+}
+to {
+-webkit-transform: scale(1.2, 1.2);
+}
+}
+@keyframes zoom {
+from {
+transform: scale(1, 1);
+}
+to {
+transform: scale(1.2, 1.2);
+}
+}
+.carousel-inner .item > img {
+-webkit-animation: zoom 20s;
+animation: zoom 20s;
+}
